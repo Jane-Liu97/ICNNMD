@@ -6,7 +6,7 @@ Molecular dynamics (MD) simulations have devoted great contribution to reveal st
 
 ## Program Features
 ICNNMD takes MD trajectories and their topology information as input, while its output files are important scores of atoms and residues. The input files are in format of ‘nc’ and ‘pdb’, respectively. The whole working procedure of ICNNMD is shown as the following figure.
-![Image text](https://github.com/Jane-Liu97/ICNNMD/blob/main/img/cfg.png)
+![Image text](img/arguments.png)
 
 ## Usage
 Requirements:
