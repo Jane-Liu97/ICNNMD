@@ -97,7 +97,7 @@ if __name__ == '__main__':
     for i in range(size):
         for j in range(size):
             worksheet.write(i * size + j, 0, i * size + j + 1)
-            worksheet.write(i * size + j, 1, importance_pic[i][j])
+            worksheet.write(i * size + j, 1, importance_pic[i][j]/(len(y_all)/2))
     workbook.close()
 
     # =============================================================================
@@ -121,7 +121,7 @@ if __name__ == '__main__':
     #################################################################
 
     #################################################################
-    fre = len(y_all)
+    fre = len(y_all)/2
     import xlrd
     rbook = xlrd.open_workbook('atom.xlsx')
     rbook.sheets()
