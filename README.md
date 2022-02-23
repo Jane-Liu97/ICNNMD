@@ -24,6 +24,7 @@ XlsxWriter
 ```
 
 Note 1: If you want to analyze your MD trajectories by ICNNMD, make sure you have two different trajectories in ‘nc’ format and their topology files in ‘pdb’. 
+
 Note 2: These two trajectories need to be the same molecule of different properties, with the same residues and atoms.
 
 There are some arguments you need to set, wherein: 
