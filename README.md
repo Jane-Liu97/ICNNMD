@@ -6,7 +6,7 @@ Molecular dynamics (MD) simulations have devoted great contribution to reveal st
 
 ## Program Features
 ICNNMD takes MD trajectories and their topology information as input, while its output files are important scores of atoms and residues. The input files are in format of ‘nc’ and ‘pdb’, respectively. The whole working procedure of ICNNMD is shown as the following figure.
-![Image text](img/arguments.png)
+![Image text](https://github.com/Jane-Liu97/ICNNMD/blob/main/img/flow.png)
 
 ## Usage
 Requirements:
@@ -22,18 +22,11 @@ xlrt
 XlsxWriter
 ```
 
-If you want to analyze your MD trajectories by ICNNMD, make sure you have two different trajectories in .nc format and their topology files in .pdb. 
- 
+Note 1: If you want to analyze your MD trajectories by ICNNMD, make sure you have two different trajectories in ‘nc’ format and their topology files in ‘pdb’. 
+Note 2: These two trajectories need to be the same molecule of different properties, with the same residues and atoms.
+
 There are some arguments you need to set, wherein: 
-```
-parser.add_argument('--nc1_file') # The path of .nc file of trajectory 1. 
-parser.add_argument('--nc2_file') # The path of .nc file of trajectory 2. 
-parser.add_argument('--pdb1_file') # The path of .pdb file of trajectory 1. 
-parser.add_argument('--pdb2_file') # The path of .pdb file of trajectory 2. 
-parser.add_argument('--print_acc') # Whether the model accuracy needs to be printed (0 for not print, 1 for print). 
-parser.add_argument('--save_models') # Whether the models need to be saved (0 for not save, 1 for save). 
-parser.add_argument('--print_detail') # Whether the details of model training need to be printed (0 for not print, 1 for print). 
-```
+![Image text](https://github.com/Jane-Liu97/ICNNMD/blob/main/img/arguments.png)
 
 For example, you can use ICNNMD directly by:
 ```
